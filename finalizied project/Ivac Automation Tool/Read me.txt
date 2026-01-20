@@ -1,0 +1,19 @@
+IVAC Automation Tool – Usage Guide
+
+
+1. Install Python 3.10+ (only once)
+2. run this command in terminal and make sure that the terminal is opened in this directory pip install -r requirements.txt
+3. Double click run.bat
+4. select how many web files you want to add
+5. select family count
+6. Chrome will open automatically
+7. Login manually and solve captcha
+8. After login, automation will start
+9. Tool will process files one by one
+10. If slots are not available, tool will stop automatically
+
+Notes:
+- Do not close Chrome while running
+- OTP is handled automatically
+- Failed files are skipped automatically
+- if you encounter any problem try to do that manually sometimes the automation might not work because of website security
