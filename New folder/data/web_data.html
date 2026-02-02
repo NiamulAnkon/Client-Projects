@@ -1,0 +1,100 @@
+<div class="grid grid-cols-1 gap-x-6 gap-y-2">
+  <div class="sm:col-span-3">
+    <div aria-hidden="true" style="position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none;">
+      <input autocomplete="off" tabindex="-1" placeholder="Your website" type="text" value="" name="website">
+      <input autocomplete="off" tabindex="-1" placeholder="Email address" type="email" value="" name="user_email">
+      <input autocomplete="off" tabindex="-1" placeholder="Address" type="text" value="" name="address">
+    </div>
+
+    <label for="mission_center" class="block text-xs font-light text-black uppercase">Select a mission</label>
+    <div class="mt-2">
+      <select id="mission_center" name="mission_center" class="block w-full rounded-md px-3 py-1.5 text-base font-light text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-1 sm:text-sm/6">
+        <option value="" disabled hidden class="text-gray-500 font-light">Select a mission</option>
+        <option value="1" class="text-black font-light">Dhaka</option>
+        <option value="2" class="text-black font-light">Chittagong</option>
+        <option value="3" class="text-black font-light">Rajshahi</option>
+        <option value="4" class="text-black font-light">Sylhet</option>
+        <option value="5" class="text-black font-light">Khulna</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="sm:col-span-3">
+    <label for="webfile_id" class="block text-xs font-light text-black uppercase">ENTER YOUR WEB FILE NUMBER <span class="text-red-600 text-[10px]">(YOUR VISA APPLICATION IS VALID FOR 15 CALENDER DAYS. PLEASE SUBMIT WITHIN VALIDITY)</span></label>
+    <div class="mt-2">
+      <input id="webfile_id" maxlength="12" autocomplete="off" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 sm:text-sm/6" type="text" value="" name="webfile_id">
+    </div>
+  </div>
+
+  <div class="sm:col-span-3">
+    <label for="webfile_id_confirm" class="block text-xs font-light text-black uppercase">ENTER YOUR WEB FILE NUMBER ONCE AGAIN <span class="text-red-600 text-[10px]">*(NO COPY PASTE ALLOWED)</span></label>
+    <div class="mt-2">
+      <input id="webfile_id_confirm" maxlength="12" autocomplete="off" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-black outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-1 focus:-outline-offset-1 sm:text-sm/6" type="text" value="" name="webfile_id_confirm">
+    </div>
+  </div>
+
+  <div class="sm:col-span-3">
+    <label for="ivac_center" class="block text-xs font-light text-black uppercase">SELECT YOUR IVAC CENTER</label>
+    <div class="mt-2">
+      <select id="ivac_center" name="ivac_center" disabled class="block w-full rounded-md px-3 py-1.5 text-base font-light text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400  sm:text-sm/6">
+        <option value="" disabled hidden>SELECT YOUR IVAC CENTER</option>
+        <option value="1">DHAKA IVAC CENTER</option>
+        <option value="2">CHITTAGONG IVAC CENTER</option>
+        <option value="3">RAJSHAHI IVAC CENTER</option>
+        <option value="4">SYLHET IVAC CENTER</option>
+        <option value="5">KHULNA IVAC CENTER</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="sm:col-span-3">
+    <label for="visa_type" class="block text-xs font-light text-black uppercase">VISA TYPE <span class="text-red-600 text-[10px]">*(PLEASE SELECT VISA TYPE SAME AS APPLICATION OR THE APPOINTMENT WILL BE TREATED AS CANCELLED)</span></label>
+    <div class="mt-2">
+      <select id="visa_type" name="visa_type" disabled class="block w-full rounded-md px-3 py-1.5 text-base font-light text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 sm:text-sm/6">
+        <option value="" disabled hidden>Select VISA type</option>
+        <option value="3">TOURIST VISA</option>
+        <option value="13">MEDICAL/MEDICAL ATTENDANT VISA</option>
+        <option value="1">BUSINESS VISA</option>
+        <option value="6">ENTRY VISA</option>
+        <option value="19">DOUBLE ENTRY VISA</option>
+        <option value="2">STUDENT VISA</option>
+        <option value="18">OTHERS VISA</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="sm:col-span-3">
+    <label for="family_count" class="block text-xs font-light text-black uppercase">NUMBER OF FAMILY MEMBERS / CO-APPLICANT</label>
+    <div class="mt-2">
+      <select id="family_count" name="family_count" disabled class="block w-full rounded-md px-3 py-1.5 text-base font-light text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 sm:text-sm/6">
+        <option value="" disabled hidden>Select if any member going with you</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="sm:col-span-3">
+    <label for="visit_purpose" class="block text-xs font-light text-black uppercase">VISIT PURPOSE DETAILS <span class="text-red-600 uppercase text-[10px]">*(NO COPY PASTE ALLOWED &amp;&amp; INPUT MUST CONTAIN A MINIMUM OF 15 CHARACTERS.)</span></label>
+    <div class="mt-2">
+      <textarea name="visit_purpose" id="visit_purpose" autocomplete="off" disabled class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 sm:text-sm/6"></textarea>
+    </div>
+  </div>
+
+  <div class="sm:col-span-3">
+    <div>
+      <label class="block text-xs font-light text-black uppercase">AMOUNT</label>
+      <label class="block text-sm font-bold text-black uppercase">BDT 1500</label>
+    </div>
+  </div>
+
+  <div class="sm:col-span-3">
+    <input type="hidden" name="cf-turnstile-response" id="cf-chl-widget-zzio3_response" value="0.Ejt4QNP3g8pSCHewrBw0T8nxksfBRE0F5HqizG1QvBXg51djunZfeU4ze7nqzBtf0dZKK9DCfk6VZBVOBjV4lhZ8B65BPZsGC6M7gbU9m9pwkWlwkIBWWRem3SnZqAy34Sv_zWhp7W7wGHoPPMAvAnqaCqMPbLy0QHvdwicFDBZ0zUe48pCUUj6hjZsr008RBSUSgNB5XF25wQQuW80U7wfZeLMkeSUadSPGyP66ZRdmoy-XhSlMgr21HxBM8HrLj9UBTfqYSXNL7PrJAAv8ZD-gsu_NXKEoPjcKAWQvBE2ot-3OHgsNRDMKe7QQ9wCThfQPY2detahzvEy5GfLS87gyHmEcmHv3H3Vsn3hLc_9wZ8YJ5eGDheW5kgWtDfDx1H1JfFTum-niasg1b2NQXN6rjwpJrcFtyTfjZwhvA1WC9O7ukQ96uxSI1YfctBxjLhuAVWHoq-xU-qbHUOjCZXQbfFmTDD9QNVJUV7P3rwuKPP9IV0c6RkquGHfhT4sfVGzTqEHj-4FuLUtiEF098uAL_eRmIfwG0pVLoh6wYuV5XEd9DlqPhvsjjQLHLcS5_0X_T019jBwKzEsqcv60OfBAdy2b5smbtIuI7sj5RJMuKKSN_3Gdejp-_E8kAbITzjBDCOlmulB-n2v4VCBWINxNkCh7XGPr9cO-xdxc1lrT3chiFdbhbjXSe5yF539CQt3FqMxRstm3fCYG49dGE3yC3xQnsAIrUZ7eZRI8e3lVOuWwFqYgi9oFBerZ2oh5hA2GYHw-mOgZT0_9p9H6JE0ARk_gHe43UdcLQ5wGGg34rXpLgbpP7xQcj_BhFGLeTecewN71n9uBa5EGNDZMmWV2JaORz6Yfbt_OrVJKKt23uRr35eD21AnVKzVE4DYqr4VnL4cy0IapyQqAhTk9i1JOapuOE3gCgBoxT4z-zuk.XNQd32D1P7bGJiGpxT0gUQ.746e4bd9b46710af83896e1f2d4a0dbc15cf9a14bc56e2da3805bc121818209e">
+  </div>
+
+  <div class="sm:col-span-3">
+    <button type="button" disabled class="text-white mb-2 mt-2 h-8 rounded-lg text-xs w-full sm:w-auto px-2 py-2 text-center transition duration-300 bg-gray-400 cursor-not-allowed" tabindex="0">Save and Next</button>
+  </div>
+</div>
